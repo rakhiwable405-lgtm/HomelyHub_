@@ -1,0 +1,19 @@
+$kind: http-request
+url: http://localhost:8084/api/v1/user/signup
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"name\": \"Rakhi Wable\",\r
+
+    \    \"email\": \"rakhiwable123@gmail.com\",\r
+
+    \    \"password\": \"rakhi123\",\r
+
+    \    \"passwordConfirm\": \"rakhi123\",\r
+
+    \    \"phoneNumber\": \"9112345678\"\r
+
+    }"
+order: 4217921160708128

@@ -1,0 +1,5 @@
+$kind: http-request
+name: booking/create-order
+url: ""
+method: GET
+order: 4341638090961422

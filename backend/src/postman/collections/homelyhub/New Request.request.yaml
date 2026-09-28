@@ -1,0 +1,20 @@
+$kind: http-request
+name: New Request
+url: http://localhost:8084/api/v1/user/login
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"name\": \"Mentor\",\r
+
+    \    \"email\": \"mentor@gmail.com\",\r
+
+    \    \"password\": \"test12345\",\r
+
+    \    \"passwordConfirm\": \"test12345\",\r
+
+    \    \"phoneNumber\": \"8889904534\"\r
+
+    }"
+order: 1787772031122
