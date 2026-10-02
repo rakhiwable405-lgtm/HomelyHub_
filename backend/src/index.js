@@ -1,11 +1,11 @@
 import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
-import cookieParser from "cookie-parser"
-import {router} from "./routes/userRoutes.js";
-import {propertyRouter}from "./routes/propertyRouter.js";
+import cookieParser from "cookie-parser";
+import { router } from "./routes/userRoutes.js";
+import { propertyRouter } from "./routes/propertyRouter.js";
 import { bookingRouter } from "./routes/bookingRouter.js";
-import {tripRouter } from "./routes/tripRouter.js";
+
 
 import connectDB from "./utils/db.js";
 
