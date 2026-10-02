@@ -4,7 +4,7 @@
 //buget
 //search in database
 
-import { Property } from "../Models/propertyModel.js"
+import { Property } from "../models/propertyModel.js"
 import { planTrip } from "../ai/tripPlanner.js"
 import { generateDescription} from "../ai/generateDescription.js"
 
