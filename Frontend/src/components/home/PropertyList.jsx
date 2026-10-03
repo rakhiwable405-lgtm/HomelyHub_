@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import gsap from "gsap";
 import "../../css/Home.css";
 
-import {useDispatch, useSelector} from "react-redux";
-import { propertyaction } from "../../store/property/property-slice";
-import { getAllProperties } from "../../store/property/property-action";
+import { useDispatch, useSelector } from "react-redux";
+import { propertyaction } from "../../store/Property/property-slice";
+import { getAllProperties } from "../../store/Property/property-action";
 
 
 
@@ -38,7 +38,7 @@ const Card = ({ id, image, name, address, price }) => {
 const PropertyList = () => {
   const [currentPage, setCurrentPage] = useState({ page: 1 });
 
- const dispatch = useDispatch();
+  const dispatch = useDispatch();
   const { properties, totalProperties } = useSelector((state) => state.properties);
 
   const lastPage = Math.ceil(totalProperties / 12);
@@ -47,8 +47,8 @@ const PropertyList = () => {
 
   useEffect(() => {
     const fetchProperties = async (page) => {
-     dispatch(propertyaction.updateSearchParams(page));
-     dispatch(getAllProperties());
+      dispatch(propertyaction.updateSearchParams(page));
+      dispatch(getAllProperties());
     };
     fetchProperties(currentPage);
   }, [currentPage, dispatch]);
